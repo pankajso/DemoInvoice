@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  root'welcome#splash'
+  get 'finder/index'
+
+  root'finder#index'
 
   get 'welcome/contact'
 
