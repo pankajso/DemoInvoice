@@ -1,9 +1,8 @@
 Rails.application.routes.draw do
-  get 'finder/index'
 
-  root 'finder#index'
 
-  get 'welcome/contact'
+  root to: 'finder#index'
+  get 'alpha' => 'finder#alpha', as: 'alpha'
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
