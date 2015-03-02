@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get 'finder/index'
 
-  root'finder#index'
+  root 'finder#index'
 
   get 'welcome/contact'
 
